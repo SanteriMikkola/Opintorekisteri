@@ -170,7 +170,7 @@ router.post('/update/:idArvionti', function(req, res, next) {
 router.get('/delete/(:idArvionti)', function(req, res, next) {
 
     let idArvionti = req.params.idArvionti;
-     
+
     dbConn.query('DELETE FROM arvionti WHERE idArvionti = ' + idArvionti, function(err, result) {
         //if(err) throw err
         if (err) {
